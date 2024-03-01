@@ -1,0 +1,103 @@
+.main_preloader {
+  background: #212121;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  overflow: hidden;
+}
+
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#path17 {
+  animation: animateLoaderDots 1s linear 1s infinite alternate;
+}
+#path18 {
+  animation: animateLoaderDots 2s linear 1s infinite alternate;
+}
+
+#path19 {
+  animation: animateLoaderDots 3s linear 1s infinite alternate;
+}
+
+#path6,
+#path7,
+#path8,
+#path9,
+#path10,
+#path11,
+#path12 {
+  animation: animateLoaderText 2s linear 1s infinite alternate;
+}
+
+#path13,
+#path14,
+#path15,
+#path16 {
+  animation: animateLoaderIcon 3s linear 1s infinite alternate;
+}
+
+@keyframes animateLoaderDots {
+  0% {
+    opacity: 0;
+    fill: #212121;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animateLoaderText {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes animateLoaderIcon {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.footer h2{
+  color: #ffffff6b;
+  font-size: 15px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ==================== Responcive Design ==================== */
+
+@media only screen and (max-width: 768px) {
+  .preloader svg{
+    width: 400px;
+    height: 400px;
+  }
+
+  .footer h2{
+    font-size: 10px;
+  }
+
+}

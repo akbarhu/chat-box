@@ -1,0 +1,90 @@
+
+.main_container {
+  background: #212121;
+  width: 100%;
+  height: 100vh;
+}
+
+.main_container  .top_logo svg{
+  margin-top: -25px;
+  margin-left: 10px;
+}
+
+.top_logo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #212121;
+  background: url(../../assets/Main_page/profile.JPG);
+  background-size: cover;
+  position: absolute;
+  top: 95%;
+  left: 98%;
+  transform: translate(-50%, -50%);
+}
+
+.top_icon{
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8%;
+  left: 98%;
+  transform: translate(-50%, -50%);
+}
+
+.top_icon li svg{
+ margin-bottom: 20px;
+}
+
+.bottom_icon{
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 90%;
+  left: 98%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom_icon li svg{
+  padding-bottom: 10px;
+}
+
+
+
+/* ==================== Responcive Design ==================== */
+
+@media only screen and (max-width: 768px) {
+.top_icon{
+  display: flex;
+  gap: 5rem;
+  position: absolute;
+  top: 96.9%;
+  left: 50px;
+}
+
+.bottom_icon{
+display: none;
+}
+.profile{
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #212121;
+  background: url(../../assets/Main_page/profile.JPG);
+  background-size: cover;
+  position: absolute;
+  top: 15px;
+  left: 90%;
+  transform: translate(-30%, -50%);
+}
+
+
+}
